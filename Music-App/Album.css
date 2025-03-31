@@ -1,0 +1,76 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(#121212, #d50079) fixed;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.album {
+    margin-right: 50px;
+}
+
+.back-button {
+    background-color: #d50079;
+}
+
+.back-button:hover {
+    background-color: #ff007f;
+    border: none;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.result {
+    width: 500px;
+    background-color: #121212;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result:hover {
+    background-color: #2a2a2a;
+    border: 2px solid #e6007e;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.album-container {
+    display: flex;
+} 
+
+.tracks-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 500px;
+} 
+
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+.track h4 {
+    width: 130px;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.album img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}

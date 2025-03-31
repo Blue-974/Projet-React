@@ -1,0 +1,138 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(./assets/bg.webp) center no-repeat fixed;
+    background-size: cover;
+}
+
+.bestiaire-container {
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+  
+.bestiaire-table {
+    width: 160%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #333;
+    margin-top: 20px;
+}
+  
+.bestiaire-th {
+    border-bottom: 2px solid white;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+}
+
+.bestiaire-tr:hover {
+    border: 3px solid #009de6;
+}
+  
+.bestiaire-td {
+    border-bottom: 1px solid #666;
+    padding: 10px;
+}
+  
+.bestiaire-tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+  
+.bestiaire-tr:nth-child(odd) {
+    background-color: #2e2e2e;
+}
+  
+.bestiaire-img {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+}
+  
+.bestiaire-td span {
+    font-size: 0.9rem;
+    color: #009de6;
+}
+  
+.bestiaire-td span:last-child {
+    color: white;
+}
+
+.bestiaire-td:hover {
+    cursor: pointer;
+}
+  
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+}
+  
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #666;
+    border-radius: 4px;
+    outline: none;
+    background-color: #444;
+    color: white;
+    transition: border-color 0.3s ease;
+}
+  
+.search-input:focus {
+    border-color: #009de6;
+    box-shadow: 0 0 5px rgba(0, 195, 255, 0.5);
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.close-button:focus {
+    outline: none;
+}
+
+.upInfo {
+    font-size: x-large;
+}
+
+.upInfo h2, p {
+    margin: 15px;
+}
+
+.downInfo {
+    background-color: #333;
+    border-radius: 6px;
+    padding: 5px 0 20px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats p {
+    margin-right: 20px;
+}
+
+.spells-container {
+    display: flex;
+}
+
+.spells-container p {
+    color: white;
+    margin: 0 20px;
+}
