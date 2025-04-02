@@ -18,15 +18,17 @@ Avant d'exécuter le projet, assurez-vous d'avoir installé les dépendances sui
 ### 2. Installer les dépendances du projet
 
 Dans le répertoire du projet, exécutez la commande suivante pour installer toutes les dépendances nécessaires :
-  ```sh
-  npm install
-  ```
+
+```sh
+npm install
+```
 
 ### 3. Dépendances utilisées
 
 Le projet utilise les bibliothèques suivantes :
 
 - **React** : bibliothèque JavaScript pour construire l'interface utilisateur
+- **Vite** : outil de build rapide pour les projets React
 - **React Router** (`react-router-dom`) : gestion de la navigation entre les pages
 - **React Hooks** (`useState`, `useEffect`) : gestion de l'état et des effets de bord
 - **react-js-loader** : affichage d'un loader lors des chargements asynchrones
@@ -37,25 +39,36 @@ Ces dépendances sont installées automatiquement via `npm install`.
 ## Lancer le projet
 
 Pour démarrer le projet en mode développement, exécutez :
-  ```sh
-  npm start
-  ```
+
+```sh
+npm run dev
+```
+
 Le projet sera accessible à l'adresse :
-  ```
-  http://localhost:3000
-  ```
+
+```
+http://localhost:5173
+```
+
+## Build du projet
+
+Pour générer une version optimisée pour la production :
+
+```sh
+npm run build
+```
 
 ## Structure du projet
 
 ```
 /src
   ├── components
-  │   ├── Music.js   # Composant principal pour la recherche
-  │   ├── Album.js   # Composant affichant les détails d'un album
+  │   ├── Music.jsx   # Composant principal pour la recherche
+  │   ├── Album.jsx   # Composant affichant les détails d'un album
   │   ├── Music.css  # Styles pour la page de recherche
   │   ├── Album.css  # Styles pour la page d'album
-  ├── App.js        # Point d'entrée de l'application
-  ├── index.js      # Initialisation de React et React Router
+  ├── App.jsx       # Point d'entrée de l'application
+  ├── main.jsx      # Initialisation de React et React Router avec Vite
 ```
 
 ## Fonctionnalités
@@ -84,6 +97,7 @@ Le projet utilise l'API **iTunes Search API** pour récupérer les données musi
   ```
 
 ## Auteur
+
 Projet développé par **[Blue 974]**.
 
 ---
