@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(#121212, #d50079) fixed;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.album h2 {
+    margin-top: 0;
+}
+
+.back-button {
+    background-color: #d50079;
+}
+
+.back-button:hover {
+    background-color: #ff007f;
+    border: none;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.result {
+    width: 500px;
+    background-color: #121212;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.result:hover {
+    background-color: #2a2a2a;
+    border: 2px solid #e6007e;
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.album-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.album {
+    flex-shrink: 0;
+}
+
+.tracks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 1;
+    padding: 20px;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+}
+
+.track h4 {
+    width: 200px;
+    margin: 0 0 0 20px;
+    font-size: 16px;
+    color: #fff;
+    word-break: break-word;
+}
+
+.album img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
